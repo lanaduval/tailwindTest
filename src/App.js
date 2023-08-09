@@ -1,9 +1,9 @@
 import './App.css';
-import Test from './Test'
+import Sidebar from './Sidebar'
 function App() {
   return (
     <div className="App">
-    <Test/>
+    <Sidebar/>
     </div>
   );
 }
