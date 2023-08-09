@@ -1,0 +1,42 @@
+[
+    {
+    "name":"Sapiologie",
+    "icon":"./assets/icons/Logo.png"
+},
+{
+ "name":"Projects",
+ "icon":"./assets/icons/briefcase.png"
+},
+{
+    "name":"Modelisations",
+    "icon":"./assets/icons/cube-transparent.png"
+},
+{
+    "name":"My Team",
+    "icon":"./assets/icons/user-group.png"
+},
+{
+    "name":"Marketplace",
+    "icon":"./assets/icons/globe.png"
+},
+{
+    "name":"Settings",
+    "icon":"./assets/icons/adjustements.png"
+},
+{
+    "name":"Help",
+    "icon":"./assets/icons/support.png"
+},
+{
+    "name":"Collapse",
+    "icon":"./assets/icons/chevron-double-left"
+
+},
+{
+    "name":"Robert Brown",
+    "icon":"./assets/icons/Robert-Brown.png"
+}
+
+]
+
+
