@@ -1,9 +1,15 @@
 import './App.css';
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar';
+import CardsGallery from './CardsGallery';
+
+
 function App() {
+
+  // penser aux propriétés d'accessibilité pour tous les components
   return (
-    <div className="App">
+    <div className="App flex">
     <Sidebar/>
+    <CardsGallery/>
     </div>
   );
 }

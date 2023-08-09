@@ -1,7 +1,9 @@
 
 
 import { useState } from 'react';
-import items from './content.json';
+
+import CardsGallery from './CardsGallery'
+
 
 import logo from './assets/icons/Logo.png';
 import briefcase from "./assets/icons/briefcase.png";
@@ -25,13 +27,13 @@ const [collapsed, setCollapsed] = useState(true);
 
     return(
 
-<div class="min-h-screen bg-gray-100">
+<div class="min-h-screen bg-gray-100"> 
   <div class={`sidebar min-h-screen overflow-hidden border-r object-contain ${collapsed ? "w-[3.35rem] ":"w-[fit-content]" }`} >  
   <div class="flex h-screen flex-col justify-between pt-2 pb-6">
 
         <ul class="mt-6 space-y-2 tracking-wide">
           <li>
-          <button  class="font-medium fill-current  w-full text-gray-600 ">
+          <button  class="font-bold fill-current  w-full text-gray-600 ">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600">
                     <img src={logo} alt="Logo" />
 
@@ -174,12 +176,14 @@ const [collapsed, setCollapsed] = useState(true);
           </li>
           </ul>
           </div>
-   
+          
        
 
           </div>
+          
         </div>
       </div>
+
 
   );
 };
