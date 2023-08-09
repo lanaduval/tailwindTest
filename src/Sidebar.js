@@ -28,12 +28,12 @@ const [collapsed, setCollapsed] = useState(true);
     return(
 
 <div class="min-h-screen bg-gray-100"> 
-  <div class={`sidebar min-h-screen overflow-hidden border-r object-contain ${collapsed ? "w-[3.35rem] ":"w-[fit-content]" }`} >  
+  <div class={`sidebar min-h-screen overflow-hidden border-r  fit-contain ${collapsed ? "w-[3.35rem] ":"w-[fit-content]" }`} >  
   <div class="flex h-screen flex-col justify-between pt-2 pb-6">
 
         <ul class="mt-6 space-y-2 tracking-wide">
           <li>
-          <button  class="font-bold fill-current  w-full text-gray-600 ">
+          <button onClick={()=> setCollapsed(!collapsed)} class=" font-bold fill-current  w-full text-gray-600 ">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600">
                     <img src={logo} alt="Logo" />
 
@@ -49,7 +49,7 @@ const [collapsed, setCollapsed] = useState(true);
           </li>
 
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600 ">
+          <button onClick={()=> setCollapsed(!collapsed)}  class="font-medium fill-current  w-full text-gray-600 ">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={briefcase} alt="briefcase" />
 
@@ -64,7 +64,7 @@ const [collapsed, setCollapsed] = useState(true);
             </button>
           </li>
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600 ">
+          <button onClick={()=> setCollapsed(!collapsed)}  class="font-medium fill-current  w-full text-gray-600 ">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={modelisation} alt="modelisation" />
 
@@ -79,7 +79,7 @@ const [collapsed, setCollapsed] = useState(true);
             </button>
           </li>
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600 ">
+          <button onClick={()=> setCollapsed(!collapsed)}  class="font-medium fill-current  w-full text-gray-600 ">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={team} alt="modelisation" />
 
@@ -94,7 +94,7 @@ const [collapsed, setCollapsed] = useState(true);
             </button>
           </li>
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600">
+          <button onClick={()=> setCollapsed(!collapsed)} class="font-medium fill-current  w-full text-gray-600">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={marketplace} alt="modelisation" />
 
@@ -110,7 +110,7 @@ const [collapsed, setCollapsed] = useState(true);
           </li>
           <hr className="border-slate-300 my-2" />
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600">
+          <button onClick={()=> setCollapsed(!collapsed)}  class="font-medium fill-current  w-full text-gray-600">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={settings} alt="modelisation" />
 
@@ -125,7 +125,7 @@ const [collapsed, setCollapsed] = useState(true);
             </button>
           </li>
           <li>
-          <button class="font-medium fill-current  w-full text-gray-600">
+          <button onClick={()=> setCollapsed(!collapsed)}  class="font-medium fill-current  w-full text-gray-600">
           <span className="relative flex items-center space-x-4 px-4 py-3 text-gray-600 hover:bg-slate-200 hover:border-s-4 border-slate-600">
                     <img src={help} alt="modelisation" />
 
